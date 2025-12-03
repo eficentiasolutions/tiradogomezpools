@@ -1,9 +1,18 @@
 import { motion } from "framer-motion";
 import { Droplets, Shield, Clock } from "lucide-react";
+import heroPoolImage from "@/assets/hero-pool.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen hero-gradient overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroPoolImage})` }}
+      />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-primary/80" />
+      
       {/* Water ripple effect */}
       <div className="water-ripple" />
       

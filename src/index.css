@@ -7,11 +7,11 @@
 @layer base {
   :root {
     /* Brand Colors - Pool Maintenance Theme */
-    --brand-primary: 213 56% 24%;
-    --brand-primary-light: 213 56% 34%;
-    --brand-teal: 168 84% 32%;
-    --brand-teal-light: 168 84% 42%;
-    --brand-dark: 222 47% 11%;
+    --brand-primary: 210 100% 25%;
+    --brand-primary-light: 205 90% 40%;
+    --brand-teal: 195 100% 45%;
+    --brand-teal-light: 195 100% 55%;
+    --brand-dark: 210 50% 10%;
     --brand-pain: 16 80% 40%;
     --brand-pain-light: 16 80% 96%;
     
@@ -25,17 +25,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 213 56% 24%;
+    --primary: 210 100% 25%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 168 84% 32%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 195 100% 45%;
+    --secondary-foreground: 210 100% 10%;
 
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 168 84% 32%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 195 100% 45%;
+    --accent-foreground: 210 100% 10%;
 
     --destructive: 16 80% 40%;
     --destructive-foreground: 210 40% 98%;
@@ -47,8 +47,8 @@
     --radius: 0.75rem;
 
     /* Shadows */
-    --shadow-glow: 0 0 20px hsla(168, 84%, 32%, 0.4), 0 0 40px hsla(168, 84%, 32%, 0.2);
-    --shadow-glow-hover: 0 0 30px hsla(168, 84%, 32%, 0.6), 0 0 60px hsla(168, 84%, 32%, 0.3);
+    --shadow-glow: 0 0 20px hsla(195, 100%, 45%, 0.4), 0 0 40px hsla(195, 100%, 45%, 0.2);
+    --shadow-glow-hover: 0 0 30px hsla(195, 100%, 45%, 0.6), 0 0 60px hsla(195, 100%, 45%, 0.3);
     --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
     --shadow-card-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
   }
@@ -63,16 +63,16 @@
     --popover: 222 47% 15%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 168 84% 42%;
-    --primary-foreground: 222 47% 11%;
+    --primary: 195 100% 55%;
+    --primary-foreground: 210 100% 10%;
 
-    --secondary: 213 56% 34%;
+    --secondary: 205 90% 50%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 168 84% 32%;
+    --accent: 195 100% 45%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 16 80% 50%;
@@ -114,7 +114,7 @@
   .btn-glow::before {
     content: '';
     @apply absolute inset-0 rounded-xl opacity-0 transition-opacity duration-300;
-    background: linear-gradient(135deg, hsla(168, 84%, 42%, 0.3), hsla(213, 56%, 34%, 0.3));
+    background: linear-gradient(135deg, hsla(195, 100%, 55%, 0.3), hsla(205, 90%, 40%, 0.3));
   }
 
   .btn-glow:hover::before {
