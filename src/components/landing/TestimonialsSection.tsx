@@ -35,29 +35,29 @@ const TestimonialsSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="py-20 lg:py-28 bg-background">
+    <section ref={ref} className="py-12 md:py-20 lg:py-28 bg-background">
       <div className="container mx-auto px-4">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
-          <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-4">
+          <span className="inline-block text-secondary font-semibold text-xs md:text-sm uppercase tracking-wider mb-3 md:mb-4">
             💬 Testimonios Reales
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4 px-2">
             Lo que Dicen Nuestros{" "}
             <span className="gradient-text">Clientes Felices</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-sm md:text-lg max-w-2xl mx-auto px-2">
             Historias reales de propietarios que recuperaron su tiempo libre
           </p>
         </motion.div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -111,22 +111,22 @@ const TestimonialsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-16 text-center"
+          className="mt-10 md:mt-16 text-center"
         >
-          <p className="text-muted-foreground mb-6">
+          <p className="text-muted-foreground mb-4 md:mb-6 text-sm md:text-base">
             Certificados y asociaciones
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            <div className="text-2xl font-bold text-foreground">
+          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 opacity-60">
+            <div className="text-lg md:text-2xl font-bold text-foreground">
               ISO 9001
             </div>
-            <div className="text-2xl font-bold text-foreground">
+            <div className="text-lg md:text-2xl font-bold text-foreground">
               ASOFAP
             </div>
-            <div className="text-2xl font-bold text-foreground">
+            <div className="text-lg md:text-2xl font-bold text-foreground">
               AEPSA
             </div>
-            <div className="text-2xl font-bold text-foreground">
+            <div className="text-lg md:text-2xl font-bold text-foreground">
               ECO-CERT
             </div>
           </div>

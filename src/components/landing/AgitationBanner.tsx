@@ -8,7 +8,7 @@ const AgitationBanner = () => {
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   return (
-    <section ref={ref} className="dark-banner py-16 lg:py-20 relative overflow-hidden">
+    <section ref={ref} className="dark-banner py-10 md:py-16 lg:py-20 relative overflow-hidden">
       {/* Animated background lines */}
       <div className="absolute inset-0">
         {[...Array(5)].map((_, i) => (
@@ -44,25 +44,25 @@ const AgitationBanner = () => {
             <AlertOctagon className="w-8 h-8 text-destructive" />
           </motion.div>
 
-          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
+          <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 md:mb-6 leading-tight px-2">
             No dejes que tu inversión se convierta en un{" "}
             <span className="text-destructive">pozo sin fondo</span>.
           </h3>
 
-          <p className="text-xl md:text-2xl text-white/80 mb-8">
+          <p className="text-base sm:text-xl md:text-2xl text-white/80 mb-6 md:mb-8 px-2">
             El daño de la corrosión{" "}
             <span className="text-destructive font-bold">te costará miles</span>{" "}
             en reparaciones evitables.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center">
             <a
               href="#contacto"
-              className="inline-flex items-center gap-2 bg-destructive hover:bg-destructive/90 text-white px-8 py-4 rounded-xl font-bold transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center gap-2 bg-destructive hover:bg-destructive/90 text-white px-6 py-3 md:px-8 md:py-4 rounded-xl font-bold transition-all duration-300 hover:scale-105 text-sm md:text-base"
             >
               Prevenir Ahora
             </a>
-            <span className="text-white/60 text-sm">
+            <span className="text-white/60 text-xs md:text-sm">
               Es más barato prevenir que reparar
             </span>
           </div>

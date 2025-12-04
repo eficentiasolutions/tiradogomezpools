@@ -26,28 +26,28 @@ const ContactSection = () => {
   };
 
   return (
-    <section ref={ref} className="py-20 lg:py-28 bg-muted" id="contacto">
+    <section ref={ref} className="py-12 md:py-20 lg:py-28 bg-muted" id="contacto">
       <div className="container mx-auto px-4">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
-          <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-4">
+          <span className="inline-block text-secondary font-semibold text-xs md:text-sm uppercase tracking-wider mb-3 md:mb-4">
             📞 Contacto
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4 px-2">
             Solicita Tu{" "}
             <span className="gradient-text">Inspección Gratuita</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-sm md:text-lg max-w-2xl mx-auto px-2">
             Déjanos tus datos y un experto te contactará en menos de 24 horas
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -55,69 +55,64 @@ const ContactSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             {/* Urgency Banner */}
-            <div className="bg-destructive/10 border-2 border-destructive/20 rounded-2xl p-6 mb-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0">
-                  <AlertTriangle className="w-6 h-6 text-destructive" />
+            <div className="bg-destructive/10 border-2 border-destructive/20 rounded-xl md:rounded-2xl p-4 md:p-6 mb-6 md:mb-8">
+              <div className="flex items-start gap-3 md:gap-4">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0">
+                  <AlertTriangle className="w-5 h-5 md:w-6 md:h-6 text-destructive" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-foreground text-lg mb-1">
+                  <h3 className="font-bold text-foreground text-base md:text-lg mb-1">
                     ¡Plazas Limitadas!
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-sm md:text-base">
                     Solo aceptamos <span className="text-destructive font-bold">10 nuevos clientes Premium</span> este mes. 
-                    Reserva tu inspección ahora para asegurar tu plaza.
                   </p>
                 </div>
               </div>
             </div>
 
-            <h3 className="text-2xl font-bold text-foreground mb-6">
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4 md:mb-6">
               Información de Contacto
             </h3>
 
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-6 h-6 text-secondary" />
+            <div className="grid grid-cols-2 lg:grid-cols-1 gap-4 md:gap-6">
+              <div className="flex items-start gap-3 md:gap-4">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground">Teléfono</h4>
-                  <p className="text-muted-foreground">+34 900 123 456</p>
-                  <p className="text-sm text-muted-foreground">Llamada gratuita</p>
+                  <h4 className="font-semibold text-foreground text-sm md:text-base">Teléfono</h4>
+                  <p className="text-muted-foreground text-xs md:text-base">+34 900 123 456</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-6 h-6 text-secondary" />
+              <div className="flex items-start gap-3 md:gap-4">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground">Email</h4>
-                  <p className="text-muted-foreground">info@smartpool.es</p>
-                  <p className="text-sm text-muted-foreground">Respuesta en 24h</p>
+                  <h4 className="font-semibold text-foreground text-sm md:text-base">Email</h4>
+                  <p className="text-muted-foreground text-xs md:text-base">info@smartpool.es</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-6 h-6 text-secondary" />
+              <div className="flex items-start gap-3 md:gap-4">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground">Zonas de Servicio</h4>
-                  <p className="text-muted-foreground">Madrid, Valencia, Barcelona, Sevilla</p>
-                  <p className="text-sm text-muted-foreground">En constante expansión</p>
+                  <h4 className="font-semibold text-foreground text-sm md:text-base">Zonas</h4>
+                  <p className="text-muted-foreground text-xs md:text-base">Madrid, Valencia, BCN</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-6 h-6 text-secondary" />
+              <div className="flex items-start gap-3 md:gap-4">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground">Horario</h4>
-                  <p className="text-muted-foreground">Lun - Vie: 8:00 - 20:00</p>
-                  <p className="text-muted-foreground">Sáb: 9:00 - 14:00</p>
+                  <h4 className="font-semibold text-foreground text-sm md:text-base">Horario</h4>
+                  <p className="text-muted-foreground text-xs md:text-base">Lun - Vie: 8-20h</p>
                 </div>
               </div>
             </div>
@@ -131,85 +126,85 @@ const ContactSection = () => {
           >
             <form
               onSubmit={handleSubmit}
-              className="bg-card rounded-3xl shadow-sm p-8"
+              className="bg-card rounded-2xl md:rounded-3xl shadow-sm p-5 md:p-8"
             >
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6">
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label className="block text-xs md:text-sm font-medium text-foreground mb-1.5 md:mb-2">
                     Nombre *
                   </label>
                   <input
                     type="text"
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground focus:ring-2 focus:ring-secondary focus:border-transparent transition-all"
+                    className="w-full px-3 md:px-4 py-2.5 md:py-3 rounded-lg md:rounded-xl border border-border bg-background text-foreground focus:ring-2 focus:ring-secondary focus:border-transparent transition-all text-sm md:text-base"
                     placeholder="Tu nombre"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label className="block text-xs md:text-sm font-medium text-foreground mb-1.5 md:mb-2">
                     Teléfono *
                   </label>
                   <input
                     type="tel"
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground focus:ring-2 focus:ring-secondary focus:border-transparent transition-all"
+                    className="w-full px-3 md:px-4 py-2.5 md:py-3 rounded-lg md:rounded-xl border border-border bg-background text-foreground focus:ring-2 focus:ring-secondary focus:border-transparent transition-all text-sm md:text-base"
                     placeholder="+34 600 000 000"
                   />
                 </div>
               </div>
 
-              <div className="mb-6">
-                <label className="block text-sm font-medium text-foreground mb-2">
+              <div className="mb-4 md:mb-6">
+                <label className="block text-xs md:text-sm font-medium text-foreground mb-1.5 md:mb-2">
                   Email *
                 </label>
                 <input
                   type="email"
                   required
-                  className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground focus:ring-2 focus:ring-secondary focus:border-transparent transition-all"
+                  className="w-full px-3 md:px-4 py-2.5 md:py-3 rounded-lg md:rounded-xl border border-border bg-background text-foreground focus:ring-2 focus:ring-secondary focus:border-transparent transition-all text-sm md:text-base"
                   placeholder="tu@email.com"
                 />
               </div>
 
-              <div className="mb-6">
-                <label className="block text-sm font-medium text-foreground mb-2">
+              <div className="mb-4 md:mb-6">
+                <label className="block text-xs md:text-sm font-medium text-foreground mb-1.5 md:mb-2">
                   Código Postal *
                 </label>
                 <input
                   type="text"
                   required
-                  className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground focus:ring-2 focus:ring-secondary focus:border-transparent transition-all"
+                  className="w-full px-3 md:px-4 py-2.5 md:py-3 rounded-lg md:rounded-xl border border-border bg-background text-foreground focus:ring-2 focus:ring-secondary focus:border-transparent transition-all text-sm md:text-base"
                   placeholder="28001"
                 />
               </div>
 
-              <div className="mb-6">
-                <label className="block text-sm font-medium text-foreground mb-2">
+              <div className="mb-4 md:mb-6">
+                <label className="block text-xs md:text-sm font-medium text-foreground mb-1.5 md:mb-2">
                   ¿Cuál es tu mayor problema con la piscina?
                 </label>
                 <textarea
-                  rows={4}
-                  className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground focus:ring-2 focus:ring-secondary focus:border-transparent transition-all resize-none"
-                  placeholder="Cuéntanos brevemente qué te preocupa..."
+                  rows={3}
+                  className="w-full px-3 md:px-4 py-2.5 md:py-3 rounded-lg md:rounded-xl border border-border bg-background text-foreground focus:ring-2 focus:ring-secondary focus:border-transparent transition-all resize-none text-sm md:text-base"
+                  placeholder="Cuéntanos brevemente..."
                 />
               </div>
 
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="btn-glow w-full flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="btn-glow w-full flex items-center justify-center gap-2 md:gap-3 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? (
-                  <div className="w-6 h-6 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                  <div className="w-5 h-5 md:w-6 md:h-6 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                 ) : (
                   <>
-                    <Send className="w-5 h-5" />
+                    <Send className="w-4 h-4 md:w-5 md:h-5" />
                     Solicitar Inspección GRATIS
                   </>
                 )}
               </button>
 
-              <p className="text-center text-sm text-muted-foreground mt-4">
-                🔒 Tus datos están protegidos. Sin spam, lo prometemos.
+              <p className="text-center text-xs md:text-sm text-muted-foreground mt-3 md:mt-4">
+                🔒 Tus datos están protegidos
               </p>
             </form>
           </motion.div>

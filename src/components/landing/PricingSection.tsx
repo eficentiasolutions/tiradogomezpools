@@ -61,29 +61,29 @@ const PricingSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="py-20 lg:py-28 bg-muted" id="precios">
+    <section ref={ref} className="py-12 md:py-20 lg:py-28 bg-muted" id="precios">
       <div className="container mx-auto px-4">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
-          <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-4">
+          <span className="inline-block text-secondary font-semibold text-xs md:text-sm uppercase tracking-wider mb-3 md:mb-4">
             💰 Planes Transparentes
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4 px-2">
             Invierte en{" "}
             <span className="gradient-text">Tranquilidad</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-sm md:text-lg max-w-2xl mx-auto px-2">
             Sin sorpresas, sin letras pequeñas. Elige el plan que mejor se adapte a ti.
           </p>
         </motion.div>
 
         {/* Pricing Grid */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
             <motion.div
               key={index}
@@ -102,31 +102,31 @@ const PricingSection = () => {
                 </div>
               )}
 
-              <div className="text-center mb-8">
-                <h3 className="text-xl font-bold text-foreground mb-2">
+              <div className="text-center mb-6 md:mb-8">
+                <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">
                   {plan.name}
                 </h3>
-                <p className="text-muted-foreground text-sm mb-4">
+                <p className="text-muted-foreground text-xs md:text-sm mb-3 md:mb-4">
                   {plan.description}
                 </p>
                 <div className="flex items-baseline justify-center">
-                  <span className="text-5xl font-black text-foreground">
+                  <span className="text-4xl md:text-5xl font-black text-foreground">
                     {plan.price}€
                   </span>
-                  <span className="text-muted-foreground ml-1">
+                  <span className="text-muted-foreground ml-1 text-sm">
                     {plan.period}
                   </span>
                 </div>
               </div>
 
               {/* Features */}
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-3 md:space-y-4 mb-6 md:mb-8">
                 {plan.features.map((feature, i) => (
-                  <li key={i} className="flex items-start gap-3">
+                  <li key={i} className="flex items-start gap-2 md:gap-3">
                     <div className="w-5 h-5 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Check className="w-3 h-3 text-secondary" />
                     </div>
-                    <span className="text-foreground">{feature}</span>
+                    <span className="text-foreground text-sm md:text-base">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -134,7 +134,7 @@ const PricingSection = () => {
               {/* CTA */}
               <a
                 href="#contacto"
-                className={`w-full py-4 rounded-xl font-bold text-center block transition-all duration-300 ${
+                className={`w-full py-3 md:py-4 rounded-xl font-bold text-center block transition-all duration-300 text-sm md:text-base ${
                   plan.featured
                     ? "btn-glow"
                     : "bg-primary text-primary-foreground hover:bg-primary/90"
@@ -151,11 +151,11 @@ const PricingSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-12 text-center"
+          className="mt-8 md:mt-12 text-center"
         >
-          <div className="inline-flex items-center gap-3 bg-card px-6 py-3 rounded-full shadow-sm">
-            <Zap className="w-5 h-5 text-secondary" />
-            <span className="text-foreground font-medium">
+          <div className="inline-flex items-center gap-2 md:gap-3 bg-card px-4 md:px-6 py-2 md:py-3 rounded-full shadow-sm">
+            <Zap className="w-4 h-4 md:w-5 md:h-5 text-secondary" />
+            <span className="text-foreground font-medium text-xs md:text-base">
               Garantía de devolución 30 días • Sin compromiso
             </span>
           </div>

@@ -37,7 +37,7 @@ const PainSection = () => {
   return (
     <section
       ref={ref}
-      className="py-20 lg:py-28 bg-brand-pain-light relative overflow-hidden"
+      className="py-12 md:py-20 lg:py-28 bg-brand-pain-light relative overflow-hidden"
     >
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
@@ -54,22 +54,21 @@ const PainSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
-          <span className="inline-block text-destructive font-semibold text-sm uppercase tracking-wider mb-4">
+          <span className="inline-block text-destructive font-semibold text-xs md:text-sm uppercase tracking-wider mb-3 md:mb-4">
             ⚠️ ¿Te suena familiar?
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4 px-2">
             Los Problemas Clásicos que{" "}
             <span className="text-destructive">Te Quitan el Sueño</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-sm md:text-lg max-w-2xl mx-auto px-2">
             Si alguno de estos problemas te resulta familiar, no estás solo.
-            Miles de propietarios enfrentan estas frustraciones cada semana.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 lg:gap-8 max-w-5xl mx-auto">
           {painPoints.map((pain, index) => (
             <motion.div
               key={index}
@@ -78,13 +77,13 @@ const PainSection = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="pain-card group"
             >
-              <div className="pain-icon group-hover:scale-110 transition-transform duration-300">
-                <pain.icon className="w-7 h-7" />
+              <div className="pain-icon w-12 h-12 md:w-14 md:h-14 group-hover:scale-110 transition-transform duration-300">
+                <pain.icon className="w-6 h-6 md:w-7 md:h-7" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">
+              <h3 className="text-lg md:text-xl font-bold text-foreground mb-2 md:mb-3">
                 {pain.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
                 {pain.description}
               </p>
             </motion.div>

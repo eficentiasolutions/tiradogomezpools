@@ -42,23 +42,23 @@ const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section ref={ref} className="py-20 lg:py-28 bg-background">
+    <section ref={ref} className="py-12 md:py-20 lg:py-28 bg-background">
       <div className="container mx-auto px-4">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
-          <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-4">
+          <span className="inline-block text-secondary font-semibold text-xs md:text-sm uppercase tracking-wider mb-3 md:mb-4">
             ❓ Preguntas Frecuentes
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4 px-2">
             ¿Tienes{" "}
             <span className="gradient-text">Dudas</span>?
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-sm md:text-lg max-w-2xl mx-auto px-2">
             Aquí respondemos las preguntas más comunes de nuestros clientes
           </p>
         </motion.div>
@@ -68,20 +68,20 @@ const FAQSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="max-w-3xl mx-auto bg-card rounded-3xl shadow-sm p-6 md:p-8"
+          className="max-w-3xl mx-auto bg-card rounded-2xl md:rounded-3xl shadow-sm p-4 md:p-6 lg:p-8"
         >
           {faqs.map((faq, index) => (
             <div key={index} className="faq-item">
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="faq-question"
+                className="faq-question py-4 md:py-5"
               >
-                <div className="flex items-center gap-3">
-                  <HelpCircle className="w-5 h-5 text-secondary flex-shrink-0" />
-                  <span>{faq.question}</span>
+                <div className="flex items-center gap-2 md:gap-3">
+                  <HelpCircle className="w-4 h-4 md:w-5 md:h-5 text-secondary flex-shrink-0" />
+                  <span className="text-sm md:text-base text-left">{faq.question}</span>
                 </div>
                 <ChevronDown
-                  className={`w-5 h-5 text-muted-foreground transition-transform duration-300 ${
+                  className={`w-4 h-4 md:w-5 md:h-5 text-muted-foreground transition-transform duration-300 flex-shrink-0 ${
                     openIndex === index ? "rotate-180" : ""
                   }`}
                 />
@@ -93,7 +93,7 @@ const FAQSection = () => {
                   opacity: openIndex === index ? 1 : 0,
                 }}
               >
-                <p className="pb-5 pl-8 text-muted-foreground leading-relaxed">
+                <p className="pb-4 md:pb-5 pl-6 md:pl-8 text-muted-foreground leading-relaxed text-sm md:text-base">
                   {faq.answer}
                 </p>
               </div>
