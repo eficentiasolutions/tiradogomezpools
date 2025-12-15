@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Droplets, Menu, X } from "lucide-react";
+import { useLocation } from "react-router-dom";
 import logoImage from "@/assets/logo-v3.png";
 
 const navLinks = [
@@ -13,6 +14,8 @@ const navLinks = [
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +24,11 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Helper to get the correct Href based on current route
+  const getHref = (hash: string) => {
+    return isHome ? hash : `/${hash}`;
+  };
 
   return (
     <motion.nav
@@ -35,7 +43,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-2 md:py-4">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2" aria-label="Inicio">
+          <a href="/" className="flex items-center gap-2" aria-label="Inicio">
             <div className="transition-transform hover:scale-105">
               <img
                 src={logoImage}
@@ -52,7 +60,7 @@ const Navbar = () => {
             {navLinks.map((link) => (
               <a
                 key={link.label}
-                href={link.href}
+                href={getHref(link.href)}
                 className={`font-medium transition-colors hover:text-secondary ${isScrolled || isMobileMenuOpen ? "text-foreground" : "text-white"
                   }`}
               >
@@ -60,7 +68,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="#contacto"
+              href={getHref("#contacto")}
               className={`px-6 py-2.5 rounded-xl font-bold transition-all ${isScrolled || isMobileMenuOpen
                 ? "bg-secondary text-white hover:bg-secondary/90"
                 : "bg-white text-primary hover:bg-white/90"
@@ -96,7 +104,7 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <a
                   key={link.label}
-                  href={link.href}
+                  href={getHref(link.href)}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="text-foreground font-medium py-2 hover:text-secondary transition-colors"
                 >
@@ -104,7 +112,7 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="#contacto"
+                href={getHref("#contacto")}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="btn-glow text-center mt-2"
               >
