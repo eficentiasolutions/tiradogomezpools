@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "¿Puedo cambiar o cancelar mi plan en cualquier momento?",
     answer:
-      "El plan de mantenimiento anual tiene una permanecía de 12 meses, si en los primeros 30 días no estás conforme podrás cancelarlo sin saber pagado nada, ya que realizamos el servicio a mes vencido.",
+      "El plan de mantenimiento premium tiene una permanecía de 12 meses, si en los primeros 30 días no estás conforme podrás cancelarlo sin haber pagado nada, ya que realizamos el servicio a mes vencido.",
   },
 ];
 

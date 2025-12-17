@@ -26,7 +26,7 @@ const Footer = () => {
             <div className="flex gap-3 md:gap-4">
               {[
                 { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=100063766951755", label: "Facebook" },
-                { Icon: Instagram, href: "#", label: "Instagram" }
+                { Icon: Instagram, href: "https://www.instagram.com/aguamassegura/", label: "Instagram" }
               ].map(({ Icon, href, label }, index) => (
                 <a
                   key={index}
@@ -47,22 +47,22 @@ const Footer = () => {
             <h4 className="font-bold mb-3 md:mb-4 text-sm md:text-base">Servicios</h4>
             <ul className="space-y-2 md:space-y-3 text-white/70 text-xs md:text-sm">
               <li>
-                <a href="#" className="hover:text-secondary transition-colors">
+                <a href="#servicios" className="hover:text-secondary transition-colors">
                   Limpieza Profesional
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-secondary transition-colors">
+                <a href="#servicios" className="hover:text-secondary transition-colors">
                   Balance Químico
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-secondary transition-colors">
+                <a href="#servicios" className="hover:text-secondary transition-colors">
                   Mantenimiento
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-secondary transition-colors">
+                <a href="#servicios" className="hover:text-secondary transition-colors">
                   Reparaciones
                 </a>
               </li>

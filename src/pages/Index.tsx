@@ -2,7 +2,6 @@ import { Helmet } from "react-helmet";
 import Navbar from "@/components/landing/Navbar";
 import HeroSection from "@/components/landing/HeroSection";
 import PainSection from "@/components/landing/PainSection";
-import FloatingBadge from "@/components/landing/FloatingBadge";
 import WhatsAppButton from "@/components/landing/WhatsAppButton";
 import AgitationBanner from "@/components/landing/AgitationBanner";
 import SolutionSection from "@/components/landing/SolutionSection";
