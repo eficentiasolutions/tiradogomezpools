@@ -30,6 +30,22 @@ const Navbar = () => {
     return isHome ? hash : `/${hash}`;
   };
 
+  const handleCtaClick = (e: React.MouseEvent) => {
+    if (isHome) {
+      e.preventDefault();
+      const event = new CustomEvent('plan-selected', { detail: 'Revisión Gratuita' });
+      window.dispatchEvent(event);
+      const targetElement = document.getElementById('formulario-contacto') || document.getElementById('contacto');
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+      setIsMobileMenuOpen(false);
+    } else {
+      e.preventDefault();
+      window.location.href = "/?plan=Revisión%20Gratuita#formulario-contacto";
+    }
+  };
+
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -69,12 +85,13 @@ const Navbar = () => {
             ))}
             <a
               href={getHref("#contacto")}
+              onClick={handleCtaClick}
               className={`px-6 py-2.5 rounded-xl font-bold transition-all ${isScrolled || isMobileMenuOpen
                 ? "bg-secondary text-white hover:bg-secondary/90"
                 : "bg-white text-primary hover:bg-white/90"
                 }`}
             >
-              Inspección Gratis
+              Revisión Gratuita
             </a>
           </div>
 
@@ -113,10 +130,10 @@ const Navbar = () => {
               ))}
               <a
                 href={getHref("#contacto")}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={handleCtaClick}
                 className="btn-glow text-center mt-2"
               >
-                Inspección Gratis
+                Revisión Gratuita
               </a>
             </div>
           </motion.div>

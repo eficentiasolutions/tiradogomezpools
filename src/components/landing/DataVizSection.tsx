@@ -29,7 +29,7 @@ const satisfactionData = {
   datasets: [
     {
       data: [78, 19, 3],
-      backgroundColor: ["#0d9488", "#1e3a5f", "#e5e7eb"],
+      backgroundColor: ["hsl(195, 100%, 45%)", "hsl(210, 100%, 25%)", "#e5e7eb"],
       borderWidth: 0,
       cutout: "75%",
     },
@@ -42,7 +42,7 @@ const timeData = {
     {
       label: "Horas Ahorradas",
       data: [10, 20, 15, 15, 15, 15],
-      backgroundColor: "rgba(13, 148, 136, 0.8)",
+      backgroundColor: "hsla(195, 100%, 45%, 0.8)",
       borderRadius: 8,
     },
   ],

@@ -36,7 +36,7 @@ const services = [
 const benefits = [
   {
     icon: Clock,
-    title: "Recupera 80h/año",
+    title: "Recupera 90h/año",
     description: "Tiempo que ahora dedicas al mantenimiento",
   },
   {

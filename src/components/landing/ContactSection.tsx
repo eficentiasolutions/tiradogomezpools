@@ -18,10 +18,11 @@ const ContactSection = () => {
         setSelectedPlan(decodeURIComponent(planParam));
 
         // Scroll logic for URL params is handled natively by hash or here if needed
-        const contactSection = document.getElementById('contacto');
-        if (contactSection) {
+        const targetId = planParam ? 'formulario-contacto' : 'contacto';
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
           // small timeout to ensure layout is stable
-          setTimeout(() => contactSection.scrollIntoView({ behavior: 'smooth' }), 100);
+          setTimeout(() => targetElement.scrollIntoView({ behavior: 'smooth' }), 100);
         }
 
         const newUrl = window.location.pathname + window.location.hash;
@@ -146,6 +147,8 @@ const ContactSection = () => {
 
           {/* Contact Form */}
           <motion.div
+            id="formulario-contacto"
+            className="scroll-mt-32"
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -159,6 +162,7 @@ const ContactSection = () => {
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_subject" value={`Nuevo contacto desde Agua Más Segura ${selectedPlan ? `- Interesado en ${selectedPlan}` : ''}`} />
               <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="Plan_Seleccionado" value={selectedPlan || "Inspección Gratuita (General)"} />
 
               {selectedPlan && (
                 <div className="mb-4 md:mb-6 bg-secondary/10 border border-secondary/20 rounded-lg p-3">
@@ -169,7 +173,6 @@ const ContactSection = () => {
                     <CheckCircle className="w-4 h-4" />
                     {selectedPlan}
                   </div>
-                  <input type="hidden" name="plan_interes" value={selectedPlan} />
                 </div>
               )}
 

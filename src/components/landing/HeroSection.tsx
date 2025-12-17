@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Droplets, Shield, Clock } from "lucide-react";
+import { Droplets, Shield, Clock, UserCheck } from "lucide-react";
 import heroPoolImage from "@/assets/hero-pool.jpg";
 
 const HeroSection = () => {
@@ -80,6 +80,15 @@ const HeroSection = () => {
           >
             <a
               href="#contacto"
+              onClick={(e) => {
+                e.preventDefault();
+                const event = new CustomEvent('plan-selected', { detail: 'Revisión Gratuita' });
+                window.dispatchEvent(event);
+                const targetElement = document.getElementById('formulario-contacto') || document.getElementById('contacto');
+                if (targetElement) {
+                  targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
               className="btn-solid inline-flex items-center gap-2 md:gap-3 text-base md:text-lg lg:text-xl"
             >
               <Droplets className="w-5 h-5 md:w-6 md:h-6" />
@@ -98,6 +107,7 @@ const HeroSection = () => {
               { icon: Shield, text: "Garantía 100%" },
               { icon: Clock, text: "Respuesta 24h" },
               { icon: Droplets, text: "Químicos Certificados" },
+              { icon: UserCheck, text: "Técnicos Cualificados" },
             ].map((item, index) => (
               <div
                 key={index}

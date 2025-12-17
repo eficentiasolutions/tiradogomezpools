@@ -58,6 +58,15 @@ const AgitationBanner = () => {
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center">
             <a
               href="#contacto"
+              onClick={(e) => {
+                e.preventDefault();
+                const event = new CustomEvent('plan-selected', { detail: 'Revisión Gratuita - Preventiva' });
+                window.dispatchEvent(event);
+                const targetElement = document.getElementById('formulario-contacto') || document.getElementById('contacto');
+                if (targetElement) {
+                  targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
               className="inline-flex items-center gap-2 bg-destructive hover:bg-destructive/90 text-white px-6 py-3 md:px-8 md:py-4 rounded-xl font-bold transition-all duration-300 hover:scale-105 text-sm md:text-base"
             >
               Prevenir Ahora

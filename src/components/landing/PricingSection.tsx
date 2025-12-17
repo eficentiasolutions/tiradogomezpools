@@ -171,10 +171,10 @@ const PricingSection = () => {
                     const event = new CustomEvent('plan-selected', { detail: plan.name });
                     window.dispatchEvent(event);
 
-                    // Smooth scroll directly
-                    const contactSection = document.getElementById('contacto');
-                    if (contactSection) {
-                      contactSection.scrollIntoView({ behavior: 'smooth' });
+                    // Smooth scroll directly to form
+                    const targetElement = document.getElementById('formulario-contacto') || document.getElementById('contacto');
+                    if (targetElement) {
+                      targetElement.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
                   className={`w-full block text-center cursor-pointer ${plan.featured

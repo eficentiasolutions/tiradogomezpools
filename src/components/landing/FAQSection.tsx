@@ -22,7 +22,7 @@ const faqs = [
   {
     question: "¿Utilizan productos seguros para niños y mascotas?",
     answer:
-      "Absolutamente. Todos nuestros productos están certificados y son seguros para uso en piscinas familiares. Además, ofrecemos opciones eco-friendly y sin cloro para familias con sensibilidades especiales.",
+      "Absolutamente. Todos nuestros productos están certificados y son seguros para uso en piscinas familiares. Además, ofrecemos opciones eco-friendly para familias con sensibilidades especiales.",
   },
   {
     question: "¿Trabajan en mi zona?",
@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "¿Puedo cambiar o cancelar mi plan en cualquier momento?",
     answer:
-      "Sí, todos nuestros planes son flexibles. Puedes cambiar de plan mensualmente o cancelar con 15 días de preaviso. Sin penalizaciones ni letras pequeñas.",
+      "El plan de mantenimiento anual tiene una permanecía de 12 meses, si en los primeros 30 días no estás conforme podrás cancelarlo sin saber pagado nada, ya que realizamos el servicio a mes vencido.",
   },
 ];
 
