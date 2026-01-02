@@ -66,7 +66,9 @@ const Navbar = () => {
                 alt="Oscar Tirado Gómez"
                 width="160"
                 height="160"
-                className="h-32 md:h-40 w-auto object-contain"
+                width="160"
+                height="160"
+                className="h-20 md:h-40 w-auto object-contain"
               />
             </div>
           </a>

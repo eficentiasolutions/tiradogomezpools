@@ -16,7 +16,9 @@ const Footer = () => {
                   loading="lazy"
                   width="160"
                   height="160"
-                  className="h-32 md:h-40 w-auto object-contain"
+                  width="160"
+                  height="160"
+                  className="h-24 md:h-40 w-auto object-contain"
                 />
               </div>
             </div>
