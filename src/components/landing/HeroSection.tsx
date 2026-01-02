@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Droplets, Shield, Clock, UserCheck } from "lucide-react";
 import heroPoolImage from "@/assets/hero-pool.jpg";
+import logoImage from "@/assets/logo-tg.png";
 
 const HeroSection = () => {
   return (
@@ -27,28 +28,30 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 md:px-4 md:py-2 rounded-full mb-6 md:mb-8"
+            className="flex flex-col items-center mb-6 md:mb-8"
           >
-            <span className="w-2 h-2 bg-brand-teal-light rounded-full animate-pulse" />
-            <span className="text-white/90 text-xs md:text-sm font-medium">
-              +650 Familias Confían en Nosotros
-            </span>
+            <img src={logoImage} alt="Oscar Tirado Gómez" className="h-24 md:h-32 w-auto mb-6 drop-shadow-lg" />
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 md:px-4 md:py-2 rounded-full">
+              <span className="w-2 h-2 bg-brand-teal-light rounded-full animate-pulse" />
+              <span className="text-white/90 text-xs md:text-sm font-medium">
+                Mantenimiento Profesional y Personalizado
+              </span>
+            </div>
           </motion.div>
 
-          {/* Main H1 - The Hook */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-tight mb-4 md:mb-6"
           >
-            ¿Tu piscina es un{" "}
-            <span className="font-extrabold text-secondary [-webkit-text-stroke:3px_white] [paint-order:stroke_fill]">placer</span> o una{" "}
-            <span className="relative">
-              <span className="relative z-10">carga</span>
-              <span className="absolute bottom-1 md:bottom-2 left-0 w-full h-2 md:h-3 bg-destructive/40 -z-0" />
+            Tu piscina impecable, <br className="hidden md:block" />
+            <span className="font-extrabold text-secondary [-webkit-text-stroke:3px_white] [paint-order:stroke_fill]">sin preocupaciones</span> y <br className="hidden md:block" />
+            lista para
+            <span className="relative ml-2">
+              <span className="relative z-10">disfrutar</span>
+              <span className="absolute bottom-1 md:bottom-2 left-0 w-full h-2 md:h-3 bg-brand-teal/40 -z-0" />
             </span>
-            ?
           </motion.h1>
 
           {/* Strong Promise */}

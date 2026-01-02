@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Droplets, Menu, X } from "lucide-react";
 import { useLocation } from "react-router-dom";
-import logoImage from "@/assets/logo-v3.png";
+import logoImage from "@/assets/logo-tg.png";
 
 const navLinks = [
   { label: "Servicios", href: "#servicios" },
@@ -63,7 +63,7 @@ const Navbar = () => {
             <div className="transition-transform hover:scale-105">
               <img
                 src={logoImage}
-                alt="Agua Más Segura"
+                alt="Oscar Tirado Gómez"
                 width="96"
                 height="96"
                 className="h-16 md:h-24 w-auto object-contain"

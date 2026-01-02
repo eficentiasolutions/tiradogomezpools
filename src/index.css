@@ -6,12 +6,12 @@
 
 @layer base {
   :root {
-    /* Brand Colors - Pool Maintenance Theme */
-    --brand-primary: 208 100% 30%;
-    --brand-primary-light: 205 90% 45%;
-    --brand-teal: 195 100% 48%;
-    --brand-teal-light: 195 100% 55%;
-    --brand-dark: 210 50% 10%;
+    /* Brand Colors - Oscar Tirado Gómez Theme */
+    --brand-primary: 215 100% 35%; /* Royal Blue */
+    --brand-primary-light: 215 90% 55%;
+    --brand-teal: 195 90% 45%;
+    --brand-teal-light: 195 90% 55%;
+    --brand-dark: 215 60% 12%;
     --brand-pain: 16 80% 40%;
     --brand-pain-light: 16 80% 96%;
 
