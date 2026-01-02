@@ -64,9 +64,9 @@ const Navbar = () => {
               <img
                 src={logoImage}
                 alt="Oscar Tirado Gómez"
-                width="120"
-                height="120"
-                className="h-20 md:h-28 w-auto object-contain"
+                width="140"
+                height="140"
+                className="h-24 md:h-32 w-auto object-contain"
               />
             </div>
           </a>
