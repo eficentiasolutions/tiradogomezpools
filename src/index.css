@@ -7,7 +7,8 @@
 @layer base {
   :root {
     /* Brand Colors - Oscar Tirado Gómez Theme */
-    --brand-primary: 215 100% 35%; /* Royal Blue */
+    --brand-primary: 215 100% 35%;
+    /* Royal Blue */
     --brand-primary-light: 215 90% 55%;
     --brand-teal: 195 90% 45%;
     --brand-teal-light: 195 90% 55%;
@@ -110,7 +111,7 @@
     @apply scale-105;
     box-shadow: var(--shadow-glow-hover);
   }
-  
+
   /* Solid Button (No Glow) */
   .btn-solid {
     @apply relative px-6 py-3 md:px-8 md:py-4 bg-secondary text-secondary-foreground font-bold rounded-xl transition-all duration-300 ease-out transform text-sm md:text-base;
@@ -248,5 +249,10 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Logo blend mode for black background images */
+  .logo-blend {
+    mix-blend-mode: screen;
   }
 }

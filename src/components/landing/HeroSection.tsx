@@ -30,7 +30,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5 }}
             className="flex flex-col items-center mb-6 md:mb-8"
           >
-            <img src={logoImage} alt="Oscar Tirado Gómez" className="h-24 md:h-32 w-auto mb-6 drop-shadow-lg" />
+            <img src={logoImage} alt="Oscar Tirado Gómez" className="h-24 md:h-32 w-auto mb-6 drop-shadow-lg logo-blend" />
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 md:px-4 md:py-2 rounded-full">
               <span className="w-2 h-2 bg-brand-teal-light rounded-full animate-pulse" />
               <span className="text-white/90 text-xs md:text-sm font-medium">
