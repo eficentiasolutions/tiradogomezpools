@@ -250,9 +250,4 @@
   .text-balance {
     text-wrap: balance;
   }
-
-  /* Logo blend mode for black background images */
-  .logo-blend {
-    mix-blend-mode: screen;
-  }
 }
