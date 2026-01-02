@@ -14,9 +14,9 @@ const Footer = () => {
                   src={logoImage}
                   alt="Oscar Tirado Gómez"
                   loading="lazy"
-                  width="140"
-                  height="140"
-                  className="h-24 md:h-32 w-auto object-contain"
+                  width="160"
+                  height="160"
+                  className="h-32 md:h-40 w-auto object-contain"
                 />
               </div>
             </div>
