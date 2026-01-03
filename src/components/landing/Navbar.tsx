@@ -57,14 +57,14 @@ const Navbar = () => {
         }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between py-2 md:py-4">
+        <div className="flex items-center justify-between py-1 md:py-2">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2" aria-label="Inicio">
             <div className="transition-transform hover:scale-110">
               <img
                 src={logoImage}
                 alt="Oscar Tirado Gómez"
-                className="h-24 md:h-40 w-auto object-contain logo-outline -my-4 md:-my-8 relative z-10"
+                className="h-20 md:h-32 w-auto object-contain logo-outline"
               />
             </div>
           </a>
