@@ -123,7 +123,7 @@ const SolutionSection = () => {
         >
           {benefits.map((benefit, index) => (
             <div key={index} className="flex items-start gap-3 md:gap-4">
-              <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
+              <div className={`w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl flex items-center justify-center flex-shrink-0 ${benefit.title === "Eco-Friendly" ? "bg-green-100" : "bg-secondary/10"}`}>
                 <benefit.icon className={`w-5 h-5 md:w-6 md:h-6 ${benefit.title === "Eco-Friendly" ? "text-green-600" : "text-secondary"}`} />
               </div>
               <div>
