@@ -11,6 +11,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const LegalNotice = lazy(() => import("./pages/legal/LegalNotice"));
 const PrivacyPolicy = lazy(() => import("./pages/legal/PrivacyPolicy"));
 const CookiesPolicy = lazy(() => import("./pages/legal/CookiesPolicy"));
+import CookieBanner from "@/components/common/CookieBanner";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
+        <CookieBanner />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

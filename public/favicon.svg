@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#083D89;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1085A6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="256" fill="url(#grad)"/>
+  <path d="M120 256 C 120 180, 200 180, 256 256 C 312 332, 392 332, 392 256" stroke="white" stroke-width="40" fill="none" stroke-linecap="round"/>
+  <text x="50%" y="420" text-anchor="middle" font-family="serif" font-weight="bold" font-size="120" fill="white">OTG</text>
+</svg>
