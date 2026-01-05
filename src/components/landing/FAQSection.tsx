@@ -22,7 +22,7 @@ const faqs = [
   {
     question: "¿Utilizan productos seguros para niños y mascotas?",
     answer:
-      "Absolutamente. Todos nuestros productos están certificados y son seguros para uso en piscinas familiares. Además, ofrecemos opciones <span class='text-green-600 font-semibold'>eco-friendly</span> para familias con sensibilidades especiales.",
+      "Absolutamente. Todos nuestros productos están certificados y son seguros para uso en piscinas familiares. Además, ofrecemos opciones eco-friendly para familias con sensibilidades especiales.",
   },
   {
     question: "¿Trabajan en mi zona?",
