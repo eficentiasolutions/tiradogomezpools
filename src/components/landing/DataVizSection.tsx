@@ -78,7 +78,7 @@ const DataVizSection = () => {
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4 px-2">
             El Sistema{" "}
-            <span className="gradient-text">Agua Más Segura</span>
+            <span className="gradient-text">Oscar Tirado Gómez</span>
           </h2>
           <p className="text-muted-foreground text-sm md:text-lg max-w-2xl mx-auto px-2">
             Metodología propia respaldada por datos reales de nuestros clientes

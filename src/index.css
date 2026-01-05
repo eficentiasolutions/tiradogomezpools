@@ -7,11 +7,12 @@
 @layer base {
   :root {
     /* Brand Colors - Oscar Tirado Gómez Theme */
-    --brand-primary: 215 100% 35%;
-    /* Royal Blue */
-    --brand-primary-light: 215 90% 55%;
-    --brand-teal: 195 90% 45%;
-    --brand-teal-light: 195 90% 55%;
+    --brand-primary: 215 90% 32%;
+    /* Deep Elegance Blue */
+    --brand-primary-light: 215 85% 50%;
+    --brand-teal: 195 85% 42%;
+    /* Refined Aqua */
+    --brand-teal-light: 195 85% 52%;
     --brand-dark: 215 60% 12%;
     --brand-pain: 16 80% 40%;
     --brand-pain-light: 16 80% 96%;

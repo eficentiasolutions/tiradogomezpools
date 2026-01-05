@@ -12,7 +12,7 @@ const NotFound = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-muted">
       <Helmet>
-        <title>404 - Página no encontrada | Agua Más Segura</title>
+        <title>404 - Página no encontrada | Oscar Tirado Gómez</title>
         <meta name="robots" content="noindex" />
       </Helmet>
       <div className="text-center">

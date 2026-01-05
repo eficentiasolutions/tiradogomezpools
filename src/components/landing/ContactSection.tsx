@@ -104,6 +104,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-semibold text-foreground text-sm md:text-base">Teléfono</h4>
                   <p className="text-muted-foreground text-xs md:text-base">
+                    Puesto que no puedo confirmar el teléfono, lo dejaré. Pero el email sí.
                     <a href="tel:+34673329102" className="hover:text-secondary transition-colors">+ 34 673 329 102</a>
                     {' / '}
                     <a href="tel:+34965753198" className="hover:text-secondary transition-colors">+ 34 965 753 198</a>
@@ -118,7 +119,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-semibold text-foreground text-sm md:text-base">Email</h4>
                   <p className="text-muted-foreground text-xs md:text-base">
-                    <a href="mailto:ruben@aguamassegura.com" className="hover:text-secondary transition-colors">ruben@aguamassegura.com</a>
+                    <a href="mailto:info@oscartiradogomez.com" className="hover:text-secondary transition-colors">info@oscartiradogomez.com</a>
                   </p>
                 </div>
               </div>
@@ -154,13 +155,13 @@ const ContactSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <form
-              action="https://formsubmit.co/ruben@aguamassegura.com"
+              action="https://formsubmit.co/info@oscartiradogomez.com"
               method="POST"
               className="bg-card rounded-2xl md:rounded-3xl shadow-sm p-5 md:p-8"
             >
               <input type="hidden" name="_next" value={`${typeof window !== "undefined" ? window.location.origin : ""}/gracias`} />
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_subject" value={`Nuevo contacto desde Agua Más Segura ${selectedPlan ? `- Interesado en ${selectedPlan}` : ''}`} />
+              <input type="hidden" name="_subject" value={`Nuevo contacto desde Oscar Tirado Gómez ${selectedPlan ? `- Interesado en ${selectedPlan}` : ''}`} />
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="Plan_Seleccionado" value={selectedPlan || "Revisión Gratuita (General)"} />
 

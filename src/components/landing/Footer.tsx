@@ -16,7 +16,7 @@ const Footer = () => {
                   loading="lazy"
                   width="200"
                   height="200"
-                  className="h-32 md:h-56 w-auto object-contain logo-outline"
+                  className="h-20 md:h-20 w-auto object-contain logo-outline"
                 />
               </div>
             </div>
@@ -26,7 +26,7 @@ const Footer = () => {
             <div className="flex gap-3 md:gap-4">
               {[
                 { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=100063766951755", label: "Facebook" },
-                { Icon: Instagram, href: "https://www.instagram.com/aguamassegura/", label: "Instagram" }
+                { Icon: Instagram, href: "https://www.instagram.com/oscartiradogomez/", label: "Instagram" }
               ].map(({ Icon, href, label }, index) => (
                 <a
                   key={index}
@@ -97,7 +97,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Oscar Tirado Gómez. Todos los derechos reservados.
           </p>
           <p className="text-white/50 text-xs md:text-sm">
-            Hecho por <a href="https://eficentiasolutions.com" target="_blank" rel="noopener noreferrer">Eficentia Solutions</a> para AMS.
+            Hecho por <a href="https://eficentiasolutions.com" target="_blank" rel="noopener noreferrer">Eficentia Solutions</a> para Oscar Tirado Gómez.
           </p>
         </div>
       </div>

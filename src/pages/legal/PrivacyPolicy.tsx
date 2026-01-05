@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
     return (
         <div className="min-h-screen bg-background flex flex-col">
             <Helmet>
-                <title>Política de Privacidad | Agua Más Segura</title>
+                <title>Política de Privacidad | Oscar Tirado Gómez</title>
                 <meta name="robots" content="noindex, follow" />
             </Helmet>
             <Navbar />
@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
                 <div className="prose prose-sm md:prose-base dark:prose-invert max-w-none">
                     <h3>1. INFORMACIÓN AL USUARIO</h3>
                     <p>
-                        <strong>Agua Más Segura</strong>, como Responsable del Tratamiento, le informa que, según lo dispuesto en el Reglamento (UE) 2016/679, de 27 de abril, (RGPD) y en la L.O. 3/2018, de 5 de diciembre, de protección de datos y garantía de los derechos digitales (LOPDGDD), trataremos su datos tal y como reflejamos en la presente Política de Privacidad.
+                        <strong>Oscar Tirado Gómez</strong>, como Responsable del Tratamiento, le informa que, según lo dispuesto en el Reglamento (UE) 2016/679, de 27 de abril, (RGPD) y en la L.O. 3/2018, de 5 de diciembre, de protección de datos y garantía de los derechos digitales (LOPDGDD), trataremos su datos tal y como reflejamos en la presente Política de Privacidad.
                     </p>
 
                     <h3>2. FINALIDAD DEL TRATAMIENTO</h3>
@@ -50,10 +50,10 @@ const PrivacyPolicy = () => {
 
                     <h3>6. DERECHOS</h3>
                     <p>
-                        Usted tiene derecho a obtener confirmación sobre si en Agua Más Segura estamos tratando sus datos personales por tanto tiene derecho a acceder a sus datos personales, rectificar los datos inexactos o solicitar su supresión cuando los datos ya no sean necesarios.
+                        Usted tiene derecho a obtener confirmación sobre si en Oscar Tirado Gómez estamos tratando sus datos personales por tanto tiene derecho a acceder a sus datos personales, rectificar los datos inexactos o solicitar su supresión cuando los datos ya no sean necesarios.
                     </p>
                     <p>
-                        Puede ejercer sus derechos dirigiendo una comunicación a la dirección de correo: <a href="mailto:ruben@aguamassegura.com">ruben@aguamassegura.com</a>.
+                        Puede ejercer sus derechos dirigiendo una comunicación a la dirección de correo: <a href="mailto:info@oscartiradogomez.com">info@oscartiradogomez.com</a>.
                     </p>
                 </div>
             </main>

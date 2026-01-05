@@ -50,7 +50,7 @@ const ThankYou = () => {
     return (
         <div className="flex min-h-screen items-center justify-center bg-background px-4">
             <Helmet>
-                <title>¡Gracias por contactarnos! | Agua Más Segura</title>
+                <title>¡Gracias por contactarnos! | Oscar Tirado Gómez</title>
                 <meta name="description" content="Hemos recibido tu solicitud correctamente. Te contactaremos pronto." />
                 <meta name="robots" content="noindex" />
             </Helmet>
@@ -67,7 +67,7 @@ const ThankYou = () => {
                 </h1>
 
                 <p className="mb-8 text-lg text-muted-foreground">
-                    Gracias por confiar en Agua Más Segura. Hemos recibido tus datos y uno de nuestros expertos se pondrá en contacto contigo en menos de 24 horas.
+                    Gracias por confiar en Oscar Tirado Gómez. Hemos recibido tus datos y uno de nuestros expertos se pondrá en contacto contigo en menos de 24 horas.
                 </p>
 
                 <p className="mb-8 text-sm text-gray-400">

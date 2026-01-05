@@ -6,7 +6,7 @@ const LegalNotice = () => {
     return (
         <div className="min-h-screen bg-background flex flex-col">
             <Helmet>
-                <title>Aviso Legal | Agua Más Segura</title>
+                <title>Aviso Legal | Oscar Tirado Gómez</title>
                 <meta name="robots" content="noindex, follow" />
             </Helmet>
             <Navbar />
@@ -19,46 +19,46 @@ const LegalNotice = () => {
                         En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico, a continuación se reflejan los siguientes datos:
                     </p>
                     <p>
-                        La empresa titular de dominio web es <strong>Agua Más Segura</strong> (en adelante Agua Más Segura), con domicilio a estos efectos en Alicante, España.
-                        Correo electrónico de contacto: <a href="mailto:ruben@aguamassegura.com">ruben@aguamassegura.com</a>.
+                        La empresa titular de dominio web es <strong>Oscar Tirado Gómez</strong> (en adelante Oscar Tirado Gómez), con domicilio a estos efectos en Alicante, España.
+                        Correo electrónico de contacto: <a href="mailto:info@oscartiradogomez.com">info@oscartiradogomez.com</a>.
                     </p>
 
                     <h3>2. USUARIOS</h3>
                     <p>
-                        El acceso y/o uso de este portal de Agua Más Segura atribuye la condición de USUARIO, que acepta, desde dicho acceso y/o uso, las Condiciones Generales de Uso aquí reflejadas. Las citadas Condiciones serán de aplicación independientemente de las Condiciones Generales de Contratación que en su caso resulten de obligado cumplimiento.
+                        El acceso y/o uso de este portal de Oscar Tirado Gómez atribuye la condición de USUARIO, que acepta, desde dicho acceso y/o uso, las Condiciones Generales de Uso aquí reflejadas. Las citadas Condiciones serán de aplicación independientemente de las Condiciones Generales de Contratación que en su caso resulten de obligado cumplimiento.
                     </p>
 
                     <h3>3. USO DEL PORTAL</h3>
                     <p>
-                        Agua Más Segura proporciona el acceso a multitud de informaciones, servicios, programas o datos (en adelante, "los contenidos") en Internet pertenecientes a Agua Más Segura o a sus licenciantes a los que el USUARIO pueda tener acceso. El USUARIO asume la responsabilidad del uso del portal. Dicha responsabilidad se extiende al registro que fuese necesario para acceder a determinados servicios o contenidos.
+                        Oscar Tirado Gómez proporciona el acceso a multitud de informaciones, servicios, programas o datos (en adelante, "los contenidos") en Internet pertenecientes a Oscar Tirado Gómez o a sus licenciantes a los que el USUARIO pueda tener acceso. El USUARIO asume la responsabilidad del uso del portal. Dicha responsabilidad se extiende al registro que fuese necesario para acceder a determinados servicios o contenidos.
                     </p>
 
                     <h3>4. PROTECCIÓN DE DATOS</h3>
                     <p>
-                        Agua Más Segura cumple con las directrices del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas (RGPD), y demás normativa vigente, y vela por garantizar un correcto uso y tratamiento de los datos personales del usuario.
+                        Oscar Tirado Gómez cumple con las directrices del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas (RGPD), y demás normativa vigente, y vela por garantizar un correcto uso y tratamiento de los datos personales del usuario.
                     </p>
 
                     <h3>5. PROPIEDAD INTELECTUAL E INDUSTRIAL</h3>
                     <p>
-                        Agua Más Segura por sí o como cesionaria, es titular de todos los derechos de propiedad intelectual e industrial de su página web, así como de los elementos contenidos en la misma (a título enunciativo, imágenes, sonido, audio, vídeo, software o textos; marcas o logotipos, combinaciones de colores, estructura y diseño, selección de materiales usados, programas de ordenador necesarios para su funcionamiento, acceso y uso, etc.), titularidad de Agua Más Segura o bien de sus licenciantes.
+                        Oscar Tirado Gómez por sí o como cesionaria, es titular de todos los derechos de propiedad intelectual e industrial de su página web, así como de los elementos contenidos en la misma (a título enunciativo, imágenes, sonido, audio, vídeo, software o textos; marcas o logotipos, combinaciones de colores, estructura y diseño, selección de materiales usados, programas de ordenador necesarios para su funcionamiento, acceso y uso, etc.), titularidad de Oscar Tirado Gómez o bien de sus licenciantes.
                     </p>
                     <p>
-                        Todos los derechos reservados. En virtud de lo dispuesto en los artículos 8 y 32.1, párrafo segundo, de la Ley de Propiedad Intelectual, quedan expresamente prohibidas la reproducción, la distribución y la comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los contenidos de esta página web, con fines comerciales, en cualquier soporte y por cualquier medio técnico, sin la autorización de Agua Más Segura.
+                        Todos los derechos reservados. En virtud de lo dispuesto en los artículos 8 y 32.1, párrafo segundo, de la Ley de Propiedad Intelectual, quedan expresamente prohibidas la reproducción, la distribución y la comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los contenidos de esta página web, con fines comerciales, en cualquier soporte y por cualquier medio técnico, sin la autorización de Oscar Tirado Gómez.
                     </p>
 
                     <h3>6. EXCLUSIÓN DE GARANTÍAS Y RESPONSABILIDAD</h3>
                     <p>
-                        Agua Más Segura no se hace responsable, en ningún caso, de los daños y perjuicios de cualquier naturaleza que pudieran ocasionar, a título enunciativo: errores u omisiones en los contenidos, falta de disponibilidad del portal o la transmisión de virus o programas maliciosos o lesivos en los contenidos, a pesar de haber adoptado todas las medidas tecnológicas necesarias para evitarlo.
+                        Oscar Tirado Gómez no se hace responsable, en ningún caso, de los daños y perjuicios de cualquier naturaleza que pudieran ocasionar, a título enunciativo: errores u omisiones en los contenidos, falta de disponibilidad del portal o la transmisión de virus o programas maliciosos o lesivos en los contenidos, a pesar de haber adoptado todas las medidas tecnológicas necesarias para evitarlo.
                     </p>
 
                     <h3>7. MODIFICACIONES</h3>
                     <p>
-                        Agua Más Segura se reserva el derecho de efectuar sin previo aviso las modificaciones que considere oportunas en su portal, pudiendo cambiar, suprimir o añadir tanto los contenidos y servicios que se presten a través de la misma como la forma en la que éstos aparezcan presentados o localizados en su portal.
+                        Oscar Tirado Gómez se reserva el derecho de efectuar sin previo aviso las modificaciones que considere oportunas en su portal, pudiendo cambiar, suprimir o añadir tanto los contenidos y servicios que se presten a través de la misma como la forma en la que éstos aparezcan presentados o localizados en su portal.
                     </p>
 
                     <h3>8. LEGISLACIÓN APLICABLE Y JURISDICCIÓN</h3>
                     <p>
-                        La relación entre Agua Más Segura y el USUARIO se regirá por la normativa española vigente y cualquier controversia se someterá a los Juzgados y tribunales de la ciudad de Alicante.
+                        La relación entre Oscar Tirado Gómez y el USUARIO se regirá por la normativa española vigente y cualquier controversia se someterá a los Juzgados y tribunales de la ciudad de Alicante.
                     </p>
                 </div>
             </main>

@@ -6,7 +6,7 @@ const CookiesPolicy = () => {
     return (
         <div className="min-h-screen bg-background flex flex-col">
             <Helmet>
-                <title>Política de Cookies | Agua Más Segura</title>
+                <title>Política de Cookies | Oscar Tirado Gómez</title>
                 <meta name="robots" content="noindex, follow" />
             </Helmet>
             <Navbar />
@@ -45,7 +45,7 @@ const CookiesPolicy = () => {
 
                     <h3>4. ACTUALIZACIÓN Y CAMBIOS</h3>
                     <p>
-                        Agua Más Segura puede modificar esta Política de Cookies en función de exigencias legislativas, reglamentarias, o con la finalidad de adaptar dicha política a las instrucciones dictadas por la Agencia Española de Protección de Datos, por ello se aconseja a los Usuarios que la visiten periódicamente.
+                        Oscar Tirado Gómez puede modificar esta Política de Cookies en función de exigencias legislativas, reglamentarias, o con la finalidad de adaptar dicha política a las instrucciones dictadas por la Agencia Española de Protección de Datos, por ello se aconseja a los Usuarios que la visiten periódicamente.
                     </p>
                 </div>
             </main>

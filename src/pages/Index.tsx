@@ -17,16 +17,16 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Agua Más Segura | Mantenimiento Profesional de Piscinas | Inspección Gratis</title>
+        <title>Oscar Tirado Gómez | Mantenimiento Profesional de Piscinas | Inspección Gratis</title>
         <meta
           name="description"
-          content="Servicio profesional de mantenimiento de piscinas. Recupera tu tiempo libre con nuestro sistema Agua Más Segura. Primera inspección de balance químico GRATIS. +500 familias satisfechas."
+          content="Servicio profesional de mantenimiento de piscinas. Recupera tu tiempo libre con nuestro sistema Oscar Tirado Gómez. Primera inspección de balance químico GRATIS. +500 familias satisfechas."
         />
         <meta
           name="keywords"
           content="mantenimiento piscinas, limpieza piscinas, balance químico piscina, servicio piscinas Madrid, mantenimiento piscinas Valencia"
         />
-        <meta property="og:title" content="Agua Más Segura | Mantenimiento Profesional de Piscinas" />
+        <meta property="og:title" content="Oscar Tirado Gómez | Mantenimiento Profesional de Piscinas" />
         <meta
           property="og:description"
           content="¿Tu piscina es un placer o una carga? Recupera 80h/año con nuestro servicio profesional. Inspección GRATIS."
