@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Droplets, Shield, Clock, UserCheck } from "lucide-react";
-import heroPoolImage from "@/assets/hero-pool.jpg";
+import heroPoolImage from "@/assets/hero-pool-premium.png";
 import logoImage from "@/assets/logo-tg.png";
 
 const HeroSection = () => {
@@ -9,7 +9,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1542314833-875b810842db?q=80&w=2070&auto=format&fit=crop')` }}
+        style={{ backgroundImage: `url(${heroPoolImage})` }}
       />
       {/* Dark overlay for text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-primary/80" />
