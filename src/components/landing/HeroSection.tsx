@@ -21,7 +21,7 @@ const HeroSection = () => {
       <div className="absolute top-20 left-10 w-32 h-32 bg-white/5 rounded-full blur-3xl" />
       <div className="absolute bottom-20 right-10 w-48 h-48 bg-brand-teal/10 rounded-full blur-3xl" />
 
-      <div className="relative container mx-auto px-4 pt-24 pb-36 md:pt-32 md:pb-20 lg:pt-40 lg:pb-32">
+      <div className="relative container mx-auto px-4 pt-24 pb-24 md:pt-32 md:pb-20 lg:pt-40 lg:pb-32">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <motion.div

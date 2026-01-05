@@ -42,7 +42,7 @@ const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section ref={ref} className="py-12 md:py-20 lg:py-28 bg-background">
+    <section ref={ref} className="py-10 md:py-20 lg:py-28 bg-background">
       <div className="container mx-auto px-4">
         {/* Section header */}
         <motion.div

@@ -37,7 +37,7 @@ const PainSection = () => {
   return (
     <section
       ref={ref}
-      className="py-12 md:py-20 lg:py-28 bg-brand-pain-light relative overflow-hidden"
+      className="py-10 md:py-20 lg:py-28 bg-brand-pain-light relative overflow-hidden"
     >
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">

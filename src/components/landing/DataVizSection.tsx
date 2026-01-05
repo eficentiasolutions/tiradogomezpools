@@ -60,7 +60,7 @@ const DataVizSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="py-12 md:py-20 lg:py-28 bg-muted relative overflow-hidden">
+    <section ref={ref} className="py-10 md:py-20 lg:py-28 bg-muted relative overflow-hidden">
       {/* Decorative background */}
       <div className="absolute top-0 right-0 w-48 md:w-96 h-48 md:h-96 bg-secondary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-48 md:w-96 h-48 md:h-96 bg-primary/5 rounded-full blur-3xl" />

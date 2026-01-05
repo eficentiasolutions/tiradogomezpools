@@ -56,7 +56,7 @@ const SolutionSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="py-12 md:py-20 lg:py-28 bg-background relative overflow-hidden">
+    <section ref={ref} className="py-10 md:py-20 lg:py-28 bg-background relative overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Section header */}
         <motion.div
