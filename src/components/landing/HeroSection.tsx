@@ -9,7 +9,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1572331165267-854da2b00ca1?q=80&w=2070&auto=format&fit=crop')` }}
+        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1562778612-e1e0cda9915c?q=80&w=2070&auto=format&fit=crop')` }}
       />
       {/* Dark overlay for text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-primary/80" />
@@ -33,7 +33,7 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 md:px-4 md:py-2 rounded-full">
               <span className="w-2 h-2 bg-brand-teal-light rounded-full animate-pulse" />
               <span className="text-white/90 text-xs md:text-sm font-medium">
-                Más que mantenimiento, es calidad de vida
+                Servicio Premium para Clientes Exigentes
               </span>
             </div>
           </motion.div>
@@ -44,8 +44,8 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-tight mb-4 md:mb-6"
           >
-            Tu Piscina Siempre Cristalina, <br className="hidden md:block" />
-            <span className="font-extrabold text-secondary [-webkit-text-stroke:3px_white] [paint-order:stroke_fill]">Tu Tiempo Siempre Tuyo</span>
+            Excelencia en el Cuidado <br className="hidden md:block" />
+            <span className="font-extrabold text-secondary [-webkit-text-stroke:3px_white] [paint-order:stroke_fill]">de tu Piscina</span>
             <span className="relative ml-2">
               <span className="relative z-10"></span>
               <span className="absolute bottom-1 md:bottom-2 left-0 w-full h-2 md:h-3 bg-brand-teal/40 -z-0" />
