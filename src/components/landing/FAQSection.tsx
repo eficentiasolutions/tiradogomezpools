@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "¿Trabajan en mi zona?",
     answer:
-      "Actualmente damos servicio en toda la provincia de Alicante. Si estás en otra ubicación, contáctanos igualmente porque estamos en constante expansión.",
+      "Actualmente damos servicio en toda la provincia de Zaragoza. Si estás en otra ubicación, contáctanos igualmente porque estamos en constante expansión.",
   },
   {
     question: "¿Puedo cambiar o cancelar mi plan en cualquier momento?",

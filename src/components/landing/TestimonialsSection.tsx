@@ -6,7 +6,7 @@ import { Star, Quote } from "lucide-react";
 const testimonials = [
   {
     name: "María García",
-    role: "Propietaria en Alicante",
+    role: "Propietaria en Zaragoza",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face",
     quote:
       "Antes pasaba cada fin de semana luchando con el pH de mi piscina. Ahora simplemente la disfruto. El equipo es profesional y siempre disponible.",
@@ -14,7 +14,7 @@ const testimonials = [
   },
   {
     name: "Carlos Rodríguez",
-    role: "Chalet en Alicante",
+    role: "Chalet en Zaragoza",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
     quote:
       "La inspección gratuita me salvó de una fuga que no había detectado. Habrían sido miles de euros en reparaciones. 100% recomendados.",

@@ -19,7 +19,7 @@ const LegalNotice = () => {
                         En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico, a continuación se reflejan los siguientes datos:
                     </p>
                     <p>
-                        La empresa titular de dominio web es <strong>Oscar Tirado Gómez</strong> (en adelante Oscar Tirado Gómez), con domicilio a estos efectos en Alicante, España.
+                        La empresa titular de dominio web es <strong>Oscar Tirado Gómez</strong> (en adelante Oscar Tirado Gómez), con domicilio a estos efectos en Zaragoza, España.
                         Correo electrónico de contacto: <a href="mailto:info@oscartiradogomez.com">info@oscartiradogomez.com</a>.
                     </p>
 
@@ -58,7 +58,7 @@ const LegalNotice = () => {
 
                     <h3>8. LEGISLACIÓN APLICABLE Y JURISDICCIÓN</h3>
                     <p>
-                        La relación entre Oscar Tirado Gómez y el USUARIO se regirá por la normativa española vigente y cualquier controversia se someterá a los Juzgados y tribunales de la ciudad de Alicante.
+                        La relación entre Oscar Tirado Gómez y el USUARIO se regirá por la normativa española vigente y cualquier controversia se someterá a los Juzgados y tribunales de la ciudad de Zaragoza.
                     </p>
                 </div>
             </main>

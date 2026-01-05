@@ -104,10 +104,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-semibold text-foreground text-sm md:text-base">Teléfono</h4>
                   <p className="text-muted-foreground text-xs md:text-base">
-                    Puesto que no puedo confirmar el teléfono, lo dejaré. Pero el email sí.
-                    <a href="tel:+34673329102" className="hover:text-secondary transition-colors">+ 34 673 329 102</a>
-                    {' / '}
-                    <a href="tel:+34965753198" className="hover:text-secondary transition-colors">+ 34 965 753 198</a>
+                    <a href="tel:+34650802198" className="hover:text-secondary transition-colors">+34 650 802 198</a>
                   </p>
                 </div>
               </div>
@@ -130,7 +127,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground text-sm md:text-base">Zonas</h4>
-                  <p className="text-muted-foreground text-xs md:text-base">Provincia de Alicante</p>
+                  <p className="text-muted-foreground text-xs md:text-base">Provincia de Zaragoza</p>
                 </div>
               </div>
 
