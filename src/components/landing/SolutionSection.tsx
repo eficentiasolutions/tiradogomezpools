@@ -127,7 +127,7 @@ const SolutionSection = () => {
                 <benefit.icon className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
               </div>
               <div>
-                <h4 className="font-bold text-foreground text-sm md:text-base">{benefit.title}</h4>
+                <h4 className={`font-bold text-sm md:text-base ${benefit.title === "Eco-Friendly" ? "text-green-600" : "text-foreground"}`}>{benefit.title}</h4>
                 <p className="text-xs md:text-sm text-muted-foreground">
                   {benefit.description}
                 </p>
